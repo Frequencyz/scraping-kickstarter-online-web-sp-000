@@ -15,9 +15,7 @@ def create_project_hash
     title = project.css("h2.bbcard_name strong a").text
     projects[title.to_sym] = {}
   end
-  html = File.read('fixtures/kickstarter.html')
-  kickstarter = Nokogiri::HTML
-   projects = {}
+ 
   
   
   binding.pry
